@@ -1,0 +1,23 @@
+/* 定位图标的绘制 */
+/* 水滴图标 */
+.icon-location {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50% 50% 0;
+    background: #fff;
+    transform: rotate(-45deg);
+
+}
+
+/* 中间镂空 */
+
+.icon-location:after {
+    content: '';
+    width: 40%;
+    height: 40%;
+    margin: 30% 0 0 29%;
+    position: absolute;
+    background-color: #0097ff;
+    border-radius: 50%;
+}
