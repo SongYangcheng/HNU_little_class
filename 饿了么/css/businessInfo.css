@@ -8,45 +8,219 @@
     height: 12vw;
     background-color: #0097ff;
 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-    justify-self: center;
     color: #fff;
     font-size: 4.8vw;
     /* 将header固定防止滚动 */
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     z-index: 1000;
-}
 
-.wrapper .business {
-    width: 100%;
-    margin-top: auto;
-    /* 给出上边距防止header遮挡 */
-    padding-top: 12vw;
-}
-
-.wrapper .business img {
-    width: 40vw;
-    height: 40vw;
     display: flex;
-    /* flex弹性盒子 */
-    flex-direction: column;
+    justify-content: center;
+    /* flex-direction: column; */
     align-items: center;
-    justify-content: space-around;
+}
+
+.wrapper .business-logo {
+    width: 100%;
+    height: 35vw;
+
+    margin-top: 12vw;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 2vw;
-
-
-
     /* margin-right: 5vw; */
 }
 
-.wrapper .business h3 {
-    padding-left: 20vw;
+.wrapper .business-logo img {
+    width: 40vw;
+    height: 30vw;
+    border-radius: 5px;
+
+}
+
+.wrapper .business-info {
+    width: 100%;
+    height: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .business-info h3 {
+    font-size: 5vw;
+}
+
+.wrapper .business-info p {
+    font-size: 3vw;
+    color: #666;
+    margin-top: 1vw;
+
+}
+
+/* ---------------------------food-------------------------- */
+.wrapper .food {
+    width: 100%;
+    margin-bottom: 14vw;
+    padding-bottom: 14vw;
+
+}
+
+.wrapper .food li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.wrapper .food li .food-left {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .food li .food-left img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5px;
+}
+
+.wrapper .food li .food-left-info {
+    margin-left: 3vw;
+}
+
+.wrapper .food li .food-left-info h3 {
+    font-size: 3.8vw;
+    color: #555;
+
+}
+
+.wrapper .food li .food-left-info p {
+    font-size: 3vw;
+    color: #888;
+    margin-top: 2vw;
+}
+
+.wrapper .food li .food-right {
+    width: 16vw;
+    /* height: 20vw; */
+    /* border-radius: 50%; */
+    /* background-color: #0097ff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .food li .food-right .fa-minus-circle {
+    font-size: 5.5vw;
+    color: #999;
+    cursor: pointer;
+}
+
+.wrapper .food li .food-right p {
+    font-size: 3.6vw;
+    color: #333;
+
+}
+
+.wrapper .food li .food-right .fa-plus-circle {
+    font-size: 5.5vw;
+    color: #0097ff;
+    cursor: pointer;
+}
+
+/* --------------------cart-------------------- */
+.wrapper .cart {
+    width: 100%;
+    height: 14vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+}
+
+.wrapper .cart .cart-left {
+    flex: 2;
+    background-color: #505050;
+    display: flex;
+
+}
+
+.wrapper .cart .cart-left .cart-left-icon {
+    width: 16vw;
+    height: 16vw;
+    box-sizing: border-box;
+
+    border: solid 1.6vw #444;
+    border-radius: 8vw;
+    background-color: #3190e8;
+
+    color: #fff;
+    font-size: 7vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -4vw;
+    margin-left: 3vw;
+
+    position: relative;
+}
+
+.wrapper .cart .cart-left .cart-left-icon-quantity {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 2.5vw;
+    background-color: red;
+    color: #fff;
+    font-size: 3.6vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: -1.5vw;
+    top: -1.5vw;
+}
+
+.wrapper .cart .cart-left .cart-left-info p:first-child {
+    margin-top: 1vw;
+    font-size: 4.5vw;
+    color: #fff;
+
+}
+
+.wrapper .cart .cart-left .cart-left-info p:last-child {
+    font-size: 2.8vw;
+    color: #aaa;
+}
+
+
+.wrapper .cart .cart-right {
+    flex: 1;
+}
+
+.wrapper .cart .cart-right .cart-right-item {
+    width: 100%;
+    height: 100%;
+
+    background-color: #38ca73;
+    color: #fff;
+    font-size: 4.5vw;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

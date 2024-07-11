@@ -8,13 +8,6 @@
     height: 12vw;
     background-color: #0097ff;
 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-    justify-self: center;
     color: #fff;
     font-size: 4.8vw;
     /* 将header固定防止滚动 */
@@ -22,6 +15,11 @@
     left: 0;
     right: 0;
     z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
 }
 
 .wrapper .business {
