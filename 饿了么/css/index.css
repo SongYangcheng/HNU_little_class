@@ -123,3 +123,36 @@
     color: #c79060;
     font-weight: 700;
 }
+
+/* ----------------------footer-------------------------- */
+.wrapper .footer {
+    width: 100%;
+    height: 14vw;
+    border-top: solid 1px #ddd;
+    /* border-top是画上方实线 */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    /* flex弹性盒子 */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper .footer li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-size: 2.5vw; */
+    color: #999;
+    justify-content: center;
+}
+
+.wrapper .footer li i {
+    font-size: 5vw;
+}
+
+.wrapper .footer li p {
+    font-size: 2.8vw;
+}
