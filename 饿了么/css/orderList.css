@@ -1,0 +1,124 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper header {
+    width: 100%;
+    height: 12vw;
+    background-color: #0097ff;
+
+    color: #fff;
+    font-size: 4.8vw;
+    /* 将header固定防止滚动 */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+/* --------------------------order-info------------------------- */
+.wrapper .order {
+    width: 100%;
+
+}
+
+.wrapper .order li {
+    width: 100%;
+}
+
+.wrapper .order li .order-info {
+    box-sizing: border-box;
+    padding: 2vw 4vw;
+
+    font-size: 4vw;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .order li .order-info .order-info-right {
+    display: flex;
+}
+
+.wrapper .order li .order-info .order-info-right .order-info-right-icon {
+    background-color: #f90;
+    color: #fff;
+    margin-left: 2vw;
+    /* 将其边沿画弧状 */
+    border-radius: 3px;
+}
+
+
+
+
+/* --------------------------detailed------------------------ */
+.wrapper .order-detailed {
+    width: 100%;
+}
+
+.wrapper .order-detailed li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw 4vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .order-detailed li p {
+    font-size: 3vw;
+    color: #666;
+}
+
+/* ------------------------------h3---------------------------- */
+.wrapper h3 {
+    margin-top: 12vw;
+    box-sizing: border-box;
+    padding: 4vw;
+
+    font-size: 4vw;
+    font-weight: 400;
+    color: #999;
+}
+
+/* ----------------------footer-------------------------- */
+.wrapper .footer {
+    width: 100%;
+    height: 14vw;
+    border-top: solid 1px #ddd;
+    /* border-top是画上方实线 */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    /* flex弹性盒子 */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper .footer li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-size: 2.5vw; */
+    color: #999;
+    justify-content: center;
+}
+
+.wrapper .footer li i {
+    font-size: 5vw;
+}
+
+.wrapper .footer li p {
+    font-size: 2.8vw;
+}

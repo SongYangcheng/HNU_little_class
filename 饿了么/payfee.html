@@ -7,7 +7,8 @@
     <link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="framework/font-awesome/reset.css" rel="stylesheet">
     <link href="css/payfee.css" rel="stylesheet">
-    <title>Document</title>
+    <script src="js/payfee.js"></script>
+    <title>饿了么 在线支付</title>
 </head>
 
 <body>
@@ -20,12 +21,11 @@
         <div class="order-info">
             <p>
                 万家饺子（软件园E18店）
-                <i src="https://bpic.588ku.com/back_origin_min_pic/20/11/23/dd3056300f41b3ff0504a35fca753dda.jpg"></i>
-            </p>
+                <i class="fa fa-caret-down" id="showBtn"></i>
             <p>&#165;49</p>
 
         </div>
-        <ul class="order-detailed">
+        <ul class="order-detailed" id="detailedBox">
             <li>
                 <p>纯肉鲜肉 X 2</p>
                 <p>&#165;16</p>
@@ -41,20 +41,24 @@
         </ul>
         <ul class="payment-type">
             <li>
+
                 <img src="img/alipay.jpg">
+                <div>支付宝</div>
                 <i class="fa fa-check-circle"></i>
             </li>
             <li>
                 <img src="img/wechat.jpg">
+                <div>微信</divclass>
+
 
 
             </li>
         </ul>
-        <div class="payment-button">
+        <div class="payment-button" onclick="location.href='orderList.html'">
             <button>确认支付</button>
         </div>
         <ul class="footer">
-            <li>
+            <li onclick="location.href='index.html'">
                 <i class="fa fa-home"></i>
                 <p>首页</p>
             </li>

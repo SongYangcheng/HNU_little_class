@@ -58,5 +58,112 @@
 
 /* --------------------------order-info------------------------- */
 .wrapper .order-info {
-    padding-top: 6vw;
+    /* width: 100%; */
+    /* margin-top: 12vw; */
+    /* background-color: #0097ff; */
+    font-size: 4vw;
+    color: #666;
+    /* padding-top: 6vw; */
+    padding: 4vw;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .order-info p:last-child {
+    color: orangered
+}
+
+/* --------------------------detailed------------------------ */
+.wrapper .order-detailed {
+    width: 100%;
+}
+
+.wrapper .order-detailed li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw 4vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .order-detailed li p {
+    font-size: 3vw;
+    color: #666;
+}
+
+/* ---------------------------------payment------------------------- */
+.wrapper .payment-type {
+    width: 100%;
+    ;
+}
+
+.wrapper .payment-type div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4vw;
+    /* margin-top: 4vw; */
+    /* background-color: #0097ff; */
+    font-size: 4vw;
+    color: #666;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .payment-type li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .payment-type li img {
+    width: 10vw;
+    height: 10vw;
+
+}
+
+.wrapper .payment-type li .fa-check-circle {
+    font-size: 5vw;
+    color: #38ca73;
+}
+
+.wrapper .payment-button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4vw;
+
+}
+
+.wrapper .payment-button button {
+    width: 100%;
+    height: 12vw;
+    background-color: #38ca73;
+    color: #fff;
+    font-size: 4vw;
+    border: none;
+    border-radius: 1vw;
+    outline: none;
+    cursor: pointer;
+}
+
+/* -----------------------------h3-------------------------------- */
+.wrapper h3 {
+    margin-top: 12vw;
+    /* color: #333; */
+    box-sizing: border-box;
+    padding: 4vw 4vw;
+    /* margin-bottom: 4vw; */
+    color: #999;
+    font-size: 4vw;
+    font-weight: 300;
 }
